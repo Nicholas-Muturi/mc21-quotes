@@ -1,15 +1,15 @@
 <div class="row">
-    <div class="col-md-3">
-        <p>By:  {{quote.author}}</p>
-    </div>
-    <div class="col-md-5">
-        <small>Days passed since post: {{quote.daysPassed|date}}</small>
-    </div>
+  <div class="col-md-3">
+    <p>By: {{quote.author}}</p>
+  </div>
+  <div class="col-md-5">
+    <small>Days passed: {{quote.daysPassed|date}}</small>
+  </div>
 </div>
 
 
 <div id="buttonsDiv">
-    <button>UP: {{quote.upvote}}</button>
-    <button>Dwn: {{quote.downvote}}</button>
-    <button>Delete</button>
+  <button class="btn btn-outline-primary">UP: {{quote.upvote}}</button>
+  <button class="btn btn-outline-primary">Dwn: {{quote.downvote}}</button>
+  <button class="btn btn-outline-danger">Delete</button>
 </div>

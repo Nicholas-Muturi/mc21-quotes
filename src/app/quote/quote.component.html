@@ -2,26 +2,25 @@
   <div class="jumbotron">
     <h2 id="jumboText">Quotes</h2>
   </div>
-
   <div id="specialQuote">
     <h6>Special Quote goes here</h6>
   </div>
-
+  <hr>
   <div id="formDiv">
     <quote-form></quote-form>
   </div>
-
+  <hr>
   <div id="detailsDiv" *ngFor='let quote of quotes; let i = index'>
     <div class="card">
       <div class="row">
-        <div class="col-md-11">
+        <div class="col-md-10">
           <h4 id="mainQuote">{{quote.quote}}</h4>
         </div>
-        <div class="col-md-1">
-          <button>D</button>
+        <div class="col-md-2">
+          <button class="btn btn-outline-primary" (click)="toggleDetails(i)">Details</button>
         </div>
       </div>
-      <quote-details [quote]='quote'></quote-details>
+      <quote-details *ngIf='quote.showDetails' [quote]='quote'></quote-details>
     </div>
   </div>
 </div>

@@ -12,6 +12,11 @@ export class QuoteComponent implements OnInit {
     new Quote(1,"I have a dream....","Martin Luther King Jnr",new Date(2019,18,5),0,0,0),
     new Quote(2,"Together we can","Obama",new Date(2009,2,4),0,0,0)
   ];
+
+  toggleDetails(index: number){
+    this.quotes[index].showDetails = !this.quotes[index].showDetails 
+  }
+
   constructor() { }
 
   ngOnInit() {
