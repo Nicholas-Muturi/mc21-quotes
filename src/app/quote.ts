@@ -5,7 +5,7 @@ export class Quote {
         public id: number,
         public quote: string,
         public author: string,
-        public datePassed: Date,
+        public daysPassed: Date,
         public upvote: number,
         public downvote: number,
         public voteDifference: number

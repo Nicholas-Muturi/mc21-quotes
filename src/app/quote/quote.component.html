@@ -1,17 +1,27 @@
 <div class="container-fluid">
-    <div class="jumbotron">
-        <h2 id="jumboText">Quotes</h2>
-    </div>
-    
-    <div id="specialQuote">
-        <h6>Special Quote goes here</h6>
-    </div>
+  <div class="jumbotron">
+    <h2 id="jumboText">Quotes</h2>
+  </div>
 
-    <div id="formDiv">
-        <quote-form></quote-form>
+  <div id="specialQuote">
+    <h6>Special Quote goes here</h6>
+  </div>
+
+  <div id="formDiv">
+    <quote-form></quote-form>
+  </div>
+
+  <div id="detailsDiv" *ngFor='let quote of quotes; let i = index'>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-11">
+          <h4 id="mainQuote">{{quote.quote}}</h4>
+        </div>
+        <div class="col-md-1">
+          <button>D</button>
+        </div>
+      </div>
+      <quote-details [quote]='quote'></quote-details>
     </div>
-    
-    <div id="detailsDiv">
-        <quote-details></quote-details>
-    </div>
+  </div>
 </div>
