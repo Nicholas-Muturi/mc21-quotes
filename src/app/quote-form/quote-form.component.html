@@ -3,7 +3,12 @@
     <form #quoteForm='ngForm' (ngSubmit)='submitForm()'>
         <div class="form-group">
             <textarea type="text" name="quote" id="quoteInput" rows="4" class="form-control" [(ngModel)]='newQuote.quote'
-            #quote='ngModel' placeholder="Insert thy wise words here..." required></textarea>
+            #quote='ngModel' placeholder="Insert thy wise words here..." minlength="4" required></textarea>
+            <!-- Error Handling -->
+            <div *ngIf="quote.invalid && (quote.dirty || quote.touched)" class="alert alert-danger">
+                <div *ngIf="quote.errors.required">Input is required</div>
+                <div *ngIf="quote.errors.minlength">The minimum length for a quote is 4 characters</div>
+            </div>
         </div>
 
         <div class="row">
@@ -11,7 +16,11 @@
             <div class="form-group">
                 <label for="authorInput">Author</label>
                 <input type="text" id="authorInput" class="form-control" [(ngModel)]='newQuote.author' name="author"
-                #author='ngModel' placeholder="Who said it?" required>
+                #author='ngModel' placeholder="Who said it?" minlength="4" required>
+                <div *ngIf="author.invalid && (author.dirty || author.touched)" class="alert alert-danger">
+                        <div *ngIf="author.errors.required">Input is required</div>
+                        <div *ngIf="author.errors.minlength">Minimum name length is 4 characters</div>
+                </div>
             </div>
             </div>
             <div class="col-md-6">
