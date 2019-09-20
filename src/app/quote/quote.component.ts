@@ -23,6 +23,14 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails 
   }
 
+  addQuote(newQuote){
+    let quoteLength = this.quotes.length;
+    newQuote.id = quoteLength + 1;
+    newQuote.daysPassed = newQuote.daysPassed;
+    this.quotes.push(newQuote);
+    console.log(newQuote.daysPassed);
+  }
+
   upvoteQuote(index: number){
     this.quotes[index].upvote += 1;
   }
@@ -44,4 +52,6 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-}
+
+
+}//end

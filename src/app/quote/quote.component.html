@@ -7,7 +7,7 @@
   </div>
   <hr>
   <div id="formDiv">
-    <quote-form></quote-form>
+    <quote-form (quoteAdd)="addQuote($event)"></quote-form>
   </div>
   <hr>
   <div id="detailsDiv" *ngFor='let quote of quotes; let i = index'>

@@ -1,5 +1,5 @@
 <h3>Add a Quote</h3>
-<form (ngSubmit)='submitForm()' #quoteForm='ngForm'>
+<form #quoteForm='ngForm' (ngSubmit)='submitForm(quoteForm)'>
   <div class="form-group">
     <label for="quoteInput">Quote</label>
     <textarea type="text" name="quote" id="quoteInput" rows="4" class="form-control" [(ngModel)]="newQuote.quote"
@@ -11,7 +11,7 @@
       <div class="form-group">
         <label for="authorInput">Author</label>
         <input type="text" id="authorInput" class="form-control" [(ngModel)]="newQuote.author" name="author"
-          #author='ngModel' placeholder="Who said these wise words?" required>
+          #author='ngModel' placeholder="Who said it?" required>
       </div>
     </div>
     <div class="col-md-6">
