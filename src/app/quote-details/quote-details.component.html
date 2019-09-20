@@ -9,7 +9,7 @@
 
 
 <div id="buttonsDiv">
-  <button class="btn btn-outline-primary">UP: {{quote.upvote}}</button>
-  <button class="btn btn-outline-primary">Dwn: {{quote.downvote}}</button>
-  <button class="btn btn-outline-danger">Delete</button>
+  <button class="btn btn-outline-primary" (click)="quoteUpvote()">UP: {{quote.upvote}}</button>
+  <button class="btn btn-outline-primary" (click)="quoteDownvote()">Dwn: {{quote.downvote}}</button>
+  <button class="btn btn-outline-danger" (click)="quoteDelete()">Delete</button>
 </div>

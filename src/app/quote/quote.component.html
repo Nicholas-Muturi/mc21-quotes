@@ -20,7 +20,13 @@
           <button class="btn btn-outline-primary" (click)="toggleDetails(i)">Details</button>
         </div>
       </div>
-      <quote-details *ngIf='quote.showDetails' [quote]='quote'></quote-details>
+      <quote-details 
+        *ngIf='quote.showDetails' 
+        [quote]='quote' 
+        (upVote)='upvoteQuote(i)' 
+        (downVote)='downvoteQuote(i)' 
+        (quoteDel)='deleteQuote(i)'
+      ></quote-details>
     </div>
   </div>
 </div>
