@@ -1,26 +1,25 @@
-<h3>Add a Quote</h3>
-<form #quoteForm='ngForm' (ngSubmit)='submitForm(quoteForm)'>
-  <div class="form-group">
-    <label for="quoteInput">Quote</label>
-    <textarea type="text" name="quote" id="quoteInput" rows="4" class="form-control" [(ngModel)]="newQuote.quote"
-      #quote='ngModel' placeholder="Insert thy wise words here..." required></textarea>
-  </div>
+<div id="formDiv">
+    <h3>Add a Quote</h3>
+    <form #quoteForm='ngForm' (ngSubmit)='submitForm()'>
+        <div class="form-group">
+            <textarea type="text" name="quote" id="quoteInput" rows="4" class="form-control" [(ngModel)]='newQuote.quote'
+            #quote='ngModel' placeholder="Insert thy wise words here..." required></textarea>
+        </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="form-group">
-        <label for="authorInput">Author</label>
-        <input type="text" id="authorInput" class="form-control" [(ngModel)]="newQuote.author" name="author"
-          #author='ngModel' placeholder="Who said it?" required>
-      </div>
-    </div>
-    <div class="col-md-6">
-        <label for="date">Date</label>
-        <input type="date" class="form-control" [(ngModel)]="newQuote.daysPassed" name="daysPassed" #daysPassed='ngModel' required>
-    </div>
-  </div>
-
-
-  <button type="submit" class="btn btn-success">Submit</button>
-
-</form>
+        <div class="row">
+            <div class="col-md-6">
+            <div class="form-group">
+                <label for="authorInput">Author</label>
+                <input type="text" id="authorInput" class="form-control" [(ngModel)]='newQuote.author' name="author"
+                #author='ngModel' placeholder="Who said it?" required>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <label for="date">Date</label>
+            <input type="date" class="form-control" [(ngModel)]='newQuote.creationDate' name="creationDate" #creationDate='ngModel'
+                required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

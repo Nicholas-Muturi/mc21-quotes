@@ -13,9 +13,10 @@ export class QuoteComponent implements OnInit {
   }
   
   quotes: Quote[] = [
-    new Quote(0,"Hell hath no fury like a woman scorned","Whoever it was",new Date(2019,14,1),0,0,0),
-    new Quote(1,"I have a dream....","Martin Luther King Jnr",new Date(2019,18,5),0,0,0),
-    new Quote(2,"Together we can","Obama",new Date(2009,2,4),0,0,0)
+    new Quote(0,"Hell hath no fury like a woman scorned","Whoever it was",new Date(2019,8,11),0,0,0),
+    new Quote(1,"I have a dream....","Martin Luther King Jnr",new Date(2019,5,18),0,0,0),
+    new Quote(2,"Together we can","Obama",new Date(2009,4,20),0,0,0),
+    new Quote(3,"Another Quote? Really","werwerwer",new Date(2019,8,19),0,0,0)
   ];
 
   //Button Functions
@@ -23,12 +24,11 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails 
   }
 
-  addQuote(newQuote){
+  addQuote(quote){
     let quoteLength = this.quotes.length;
-    newQuote.id = quoteLength + 1;
-    newQuote.daysPassed = newQuote.daysPassed;
-    this.quotes.push(newQuote);
-    console.log(newQuote.daysPassed);
+    quote.id = quoteLength + 1;
+    quote.creationDate = new Date(quote.creationDate);
+    this.quotes.push(quote);
   }
 
   upvoteQuote(index: number){

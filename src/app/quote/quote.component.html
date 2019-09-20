@@ -6,9 +6,7 @@
     <h6>Special Quote goes here</h6>
   </div>
   <hr>
-  <div id="formDiv">
-    <quote-form (quoteAdd)="addQuote($event)"></quote-form>
-  </div>
+  <quote-form (quoteAdd)="addQuote($event)"></quote-form>
   <hr>
   <div id="detailsDiv" *ngFor='let quote of quotes; let i = index'>
     <div class="card">
@@ -20,13 +18,8 @@
           <button class="btn btn-outline-primary" (click)="toggleDetails(i)">Details</button>
         </div>
       </div>
-      <quote-details 
-        *ngIf='quote.showDetails' 
-        [quote]='quote' 
-        (upVote)='upvoteQuote(i)' 
-        (downVote)='downvoteQuote(i)' 
-        (quoteDel)='deleteQuote(i)'
-      ></quote-details>
+      <quote-details *ngIf='quote.showDetails' [quote]='quote' (upVote)='upvoteQuote(i)' (downVote)='downvoteQuote(i)'
+        (quoteDel)='deleteQuote(i)'></quote-details>
     </div>
   </div>
 </div>
