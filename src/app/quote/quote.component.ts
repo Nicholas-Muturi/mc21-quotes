@@ -42,9 +42,6 @@ export class QuoteComponent implements OnInit {
     if(confirmed){
       this.quotes.splice(index,1);
     }
-    
   }
-
-
 
 }
