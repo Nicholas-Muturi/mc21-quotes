@@ -1,5 +1,10 @@
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 div {
-    font-family: 'Lusitana', serif;
+  font-family: 'Lusitana', serif;
 }
 
 .jumbotron {
@@ -11,14 +16,13 @@ div {
   border-radius: 0px;
 }
 
-
 .jumbotron h1 {
   margin: 0px;
   text-align: center;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   font-size: 80px;
-  
+
 }
 
 #specialQuote {
@@ -28,11 +32,12 @@ div {
   background-color: #FCDFB3;
 }
 
-#specialQuote h2{
+#specialQuote h2 {
   text-decoration: underline;
 }
 
-#specialQuote h4,p{
+#specialQuote h4,
+p {
   font-family: 'Antic', sans-serif
 }
 
@@ -56,12 +61,13 @@ div {
   text-align: center;
 }
 
-.card-title, .card-body {
+.card-title,
+.card-body {
   margin: 0px;
 }
 
 #showDetails {
   display: block;
   margin: 0px auto;
-  
+
 }
