@@ -4,8 +4,8 @@
   </div>
   <div id="specialQuote">
     <h2>Most Popular Vote</h2>
-    <h4>{{highestVotedQuote.quote}}</h4>
-    <p>- {{highestVotedQuote.author}}</p>
+    <h4 appHighlight>{{highestVotedQuote.quote}}</h4>
+    <p appHighlight>- {{highestVotedQuote.author}}</p>
   </div>
   <hr>
   <quote-form (quoteAdd)="addQuote($event)"></quote-form>
