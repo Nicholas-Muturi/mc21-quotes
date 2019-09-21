@@ -1,0 +1,26 @@
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.col-md-6 label{
+    display: block;
+    text-align: center;
+}
+
+#quoteInputDiv textarea, #quoteInputDiv .alert {
+    width: 97%;
+    margin: auto;
+}
+
+#authorInput, #dateInput, .col-md-6 .alert {
+    width: 80%;
+    margin: auto;
+}
+
+button {
+    display: block;
+    width: 10%;
+    margin: 10px auto
+}
