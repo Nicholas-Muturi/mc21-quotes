@@ -1,12 +1,14 @@
 div {
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .jumbotron {
+  margin: 0px;
   background-image: url('/assets/water-color.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 85%;
+  border-radius: 0px;
 }
 
 
@@ -15,10 +17,22 @@ div {
   text-align: center;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
-  font-size: 80px;  
+  font-size: 80px;
+  
 }
 
+#specialQuote {
+  margin: 0px;
+  padding: 2em;
+  text-align: center;
+}
 
+#specialQuote h2{
+  text-decoration: underline;
+}
 
+#specialQuote h4,p{
+  font-family: 'Antic', sans-serif
+}
 
 
