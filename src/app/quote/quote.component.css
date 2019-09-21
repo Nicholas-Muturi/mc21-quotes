@@ -69,5 +69,5 @@ p {
 #showDetails {
   display: block;
   margin: 0px auto;
-
+  border-radius: 20px;
 }

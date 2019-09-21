@@ -39,6 +39,7 @@ button {
     border: 2px solid #FCC87B;
     background-color: #ffffff;
     color: #312F2F;
+    border-radius: 20px;
 }
 
 button:hover {

@@ -4,5 +4,6 @@
 
 #buttonsDiv button {
     display: inline-block;
+    border-radius: 20px;
     margin-left: 10px;
 }
