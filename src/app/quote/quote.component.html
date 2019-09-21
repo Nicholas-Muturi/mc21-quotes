@@ -1,9 +1,11 @@
 <div class="container-fluid">
   <div class="jumbotron">
-    <h2 id="jumboText">Quotes</h2>
+    <h1 id="jumboText">Quotes</h1>
   </div>
   <div id="specialQuote">
-    <h6>Special Quote goes here</h6>
+    <h2>Most Popular Vote</h2>
+    <h4>{{highestVotedQuote.quote}}</h4>
+    <p>- {{highestVotedQuote.author}}</p>
   </div>
   <hr>
   <quote-form (quoteAdd)="addQuote($event)"></quote-form>
