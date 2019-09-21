@@ -1,5 +1,5 @@
 div {
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Lusitana', serif;
 }
 
 .jumbotron {
@@ -25,6 +25,7 @@ div {
   margin: 0px;
   padding: 2em;
   text-align: center;
+  background-color: #FCDFB3;
 }
 
 #specialQuote h2{
@@ -38,6 +39,7 @@ div {
 #formDiv {
   margin: 0px;
   padding: 2em;
+  background-color: #e0f2f9;
 }
 
 

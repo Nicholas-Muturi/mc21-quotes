@@ -9,6 +9,14 @@ h2 {
     text-align: center;
 }
 
+.alert {
+    background-color: #8B2635;
+    color: #E0E2DB;
+    font-weight: 300px;
+    font-family: 'Antic', sans-serif;
+    
+}
+
 #quoteInputDiv textarea, #quoteInputDiv .alert {
     width: 97%;
     margin: auto;
@@ -19,8 +27,21 @@ h2 {
     margin: auto;
 }
 
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #406E8E;
+}
+
 button {
     display: block;
     width: 10%;
-    margin: 10px auto
+    margin: 10px auto;
+    border: 1px solid #406E8E;
+    color: #312F2F;
+}
+
+button:hover {
+    border: 1px solid #406E8E;
+    background-color: #406E8E;
+    color: #EEE5E9; 
 }
