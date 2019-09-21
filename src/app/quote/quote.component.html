@@ -16,9 +16,9 @@
         <div class="card">
           <h4 id="mainQuote" class="card-title">{{quote.quote}}</h4>
           <div class="card-body">
-              <button class="btn btn-outline-primary" (click)="toggleDetails(i)">Details</button>
+              <button id="showDetails" class="btn btn-outline-primary" (click)="showDetails(i)" *ngIf='quote.showDetailsBtn'>Details</button>
               <quote-details *ngIf='quote.showDetails' [quote]='quote' (upVote)='upvoteQuote(i)' (downVote)='downvoteQuote(i)'
-        (quoteDel)='deleteQuote(i)'></quote-details>
+        (quoteDel)='deleteQuote(i)' (hide)='hideDetails(i)'></quote-details>
           </div>
         </div>
       </div>

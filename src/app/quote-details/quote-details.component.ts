@@ -16,7 +16,7 @@ export class QuoteDetailsComponent implements OnInit {
   @Output() upVote = new EventEmitter();
   @Output() downVote = new EventEmitter();
   @Output() quoteDel = new EventEmitter();
-
+  @Output() hide = new EventEmitter();
 
   quoteUpvote(){
     this.upVote.emit();
@@ -30,6 +30,9 @@ export class QuoteDetailsComponent implements OnInit {
     this.quoteDel.emit();
   }
 
+  detailsHide(){
+    this.hide.emit();
+  }
   
 
 }

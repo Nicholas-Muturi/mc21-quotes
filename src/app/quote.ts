@@ -1,7 +1,7 @@
 export class Quote {
     showDetails: boolean;
+    showDetailsBtn: boolean;
     daysPassed: number;
-    
     constructor(
         public id: number,
         public quote: string,
@@ -12,5 +12,6 @@ export class Quote {
         public voteDifference: number
     ){
         this.showDetails = false;
+        this.showDetailsBtn = true;
     }
 }

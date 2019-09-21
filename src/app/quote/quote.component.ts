@@ -27,8 +27,14 @@ export class QuoteComponent implements OnInit {
   }
 
   //Button Click Functions
-  toggleDetails(index: number){
-    this.quotes[index].showDetails = !this.quotes[index].showDetails 
+  showDetails(index: number){
+    this.quotes[index].showDetails = true;
+    this.quotes[index].showDetailsBtn = false;
+  }
+
+  hideDetails(index: number){
+    this.quotes[index].showDetails = false;
+    this.quotes[index].showDetailsBtn = true;
   }
 
   addQuote(quote){
