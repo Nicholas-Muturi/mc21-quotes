@@ -48,7 +48,7 @@ p {
 }
 
 #detailsDiv {
-  margin: 0px auto 10px auto;
+  margin: 0px auto 0px auto;
   padding: 2em;
   background-color: #FCDFB3;
 }
@@ -76,4 +76,15 @@ p {
   display: block;
   margin: 0px auto;
   border-radius: 20px;
+}
+
+.footer {
+  margin: 0px;
+  padding: 1em;
+  text-align: center;
+  background-color: #e0f2f9;
+}
+
+.footer h6 {
+margin: 0px;
 }
