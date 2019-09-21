@@ -53,6 +53,12 @@ p {
   background-color: #FCDFB3;
 }
 
+#detailsDiv h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
 #detailsDiv .card {
   margin: 0px auto 20px auto;
   padding: 10px;
