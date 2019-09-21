@@ -3,12 +3,15 @@
     <h1 id="jumboText">Quotes</h1>
   </div>
   <div id="specialQuote">
-    <h2>Most Popular Vote</h2>
+    <h2>Quote of the Day</h2>
     <h4 appHighlight>{{highestVotedQuote.quote}}</h4>
     <p appHighlight>- {{highestVotedQuote.author}}</p>
   </div>
   <hr>
-  <quote-form (quoteAdd)="addQuote($event)"></quote-form>
+  <div id="formDiv">
+    <quote-form (quoteAdd)="addQuote($event)"></quote-form>
+  </div>
+  
   <hr>
   <div id="detailsDiv" *ngFor='let quote of quotes; let i = index'>
     <div class="card">
