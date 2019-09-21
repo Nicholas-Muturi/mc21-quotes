@@ -42,4 +42,14 @@ div {
   background-color: #e0f2f9;
 }
 
+#detailsDiv {
+  margin: 0px auto 10px auto;
+  padding: 2em;
+  background-color: #FCDFB3;
+}
 
+#detailsDiv .card {
+  margin: 0px auto 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
