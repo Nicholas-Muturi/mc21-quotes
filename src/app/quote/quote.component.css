@@ -9,7 +9,7 @@ div {
 
 .jumbotron {
   margin: 0px;
-  background-image: url('~/assets/water-color.jpg');
+  background-image: url('./assets/water-color.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 85%;
