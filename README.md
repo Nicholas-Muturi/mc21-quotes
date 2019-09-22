@@ -31,7 +31,7 @@ This is a simple angular app that shows quotes and allows the user to insert new
 The live demo to the project can be found [by clicking here](https://quotes-ip1.firebaseapp.com/) or [this alternative link](https://nicholas-muturi.github.io/mc21-quotes/)
 
 ## License
-ed
+
 This website is under the MIT license which can be found [HERE](LICENSE)
 
 
