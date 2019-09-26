@@ -91,7 +91,7 @@ export class QuoteComponent implements OnInit {
         this.highestVotedQuote.qID = this.quotes[i].id;
         this.highestVotedQuote.quote = this.quotes[i].quote;
         this.highestVotedQuote.author = this.quotes[i].author;
-      }
+       }
     }
   }
 
